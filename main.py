@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import BOT_TOKEN, API_ID, API_HASH
 from telethon import TelegramClient
 
-(
+
 client = TelegramClient(
     "Pixeldrain-Bot",
     api_id=API_ID,
