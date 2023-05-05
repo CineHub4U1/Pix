@@ -2,13 +2,15 @@ import os
 import pixeldrain
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from config import BOT_TOKEN, API_ID, API_HASH
+from telethon import TelegramClient
 
-
-Bot = Client(
+(
+client = TelegramClient(
     "Pixeldrain-Bot",
-    bot_token = os.environ["6239265736:AAEyLRnQTBCrWllSB_vYFO4KO5-jFHha0b4"],
-    api_id = int(os.environ["7405235"]),
-    api_hash = os.environ["5c9541eefe8452186e9649e2effc1f3f"]
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN
 )
 
 
