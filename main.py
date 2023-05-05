@@ -6,9 +6,9 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 Bot = Client(
     "Pixeldrain-Bot",
-    bot_token = os.environ["BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"]
+    bot_token = os.environ["BOT_TOKEN", "6239265736:AAEyLRnQTBCrWllSB_vYFO4KO5-jFHha0b4"],
+    api_id = int(os.environ["API_ID", "7405235"]),
+    api_hash = os.environ["API_HASH", "5c9541eefe8452186e9649e2effc1f3f"]
 )
 
 
